@@ -28,7 +28,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Ms Madi", cursive;
   text-align: center;
   color: #e99477;
 }
@@ -37,9 +36,13 @@ footer {
   background-color: #e99477; /* den farve du bruger */
   width: 100%;
   padding: 40px 0; /* højde og lidt luft inde i footeren */
-  text-align: center;
   margin: 0;
 }
+
+footer p {
+  text-align: center;
+}
+
 /************ nav bar *************/
 
 header {
@@ -271,6 +274,7 @@ p {
 
   .text-1 h2 {
     margin-left: -330px;
+    font-family: "Gloock", serif;
   }
 
   .text-2 {
@@ -280,7 +284,106 @@ p {
     margin-left: 100px;
   }
 
+  .text-2 h2 {
+    font-family: "Gloock", serif;
+  }
+  .text-3 h2 {
+    font-family: "Gloock", serif;
+  }
+
   .grid-container_2 h2 {
     margin-right: 20px;
+  }
+}
+
+/************* Grundlæggende web **********/
+.img-web-1 {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+}
+.img-web-2 {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+}
+.img-web-3 {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+}
+
+.img-web-4 {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .grid-web-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .grid-web-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .grid-web-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .grid-web-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .img-web-1 {
+    padding-top: 100px;
+    padding-right: 250px;
+  }
+  .img-web-3 {
+    margin-right: 250px;
+  }
+
+  .img-web-2 {
+    padding-top: 100px;
+    margin-left: 250px;
+  }
+
+  .img-web-4 {
+    padding-top: 100px;
+    margin-left: 250px;
+  }
+
+  .text-web-1 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-web-2 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-web-3 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-web-4 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+
+  .text-web-1 {
+    padding-left: 250px;
+  }
+
+  .text-web-3 {
+    margin-left: 250px;
   }
 }
