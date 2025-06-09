@@ -1,3 +1,9 @@
+img {
+  padding-top: 20px;
+  width: 400px;
+  margin-left: 20px;
+}
+
 body {
   margin: 0;
   background-color: #fffdef;
@@ -21,26 +27,81 @@ body {
   font-style: normal;
 }
 
+.league-script-regular {
+  font-family: "League Script", cursive;
+  font-weight: 200;
+  font-style: normal;
+}
+
 h1 {
   font-family: "Gloock", serif;
   text-align: center;
-  color: #e99477;
+  color: #ed7252;
 }
 
 h2 {
   text-align: center;
-  color: #e99477;
+  color: #ed7252;
 }
 
+/********** Footer ***********/
 footer {
   background-color: #e99477; /* den farve du bruger */
   width: 100%;
   padding: 40px 0; /* højde og lidt luft inde i footeren */
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer p {
   text-align: center;
+}
+
+.social-icons a {
+  color: black; /* ændrer farven til sort */
+  font-size: 20px; /* gør ikonerne større */
+  margin: 5px; /* lidt afstand imellem */
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .social-icons {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.navigation-links {
+  display: flex;
+  justify-content: space-between; /* placer links i hver sin side */
+  align-items: center;
+  padding: 0 250px;
+  margin-top: 50px; /* valgfri afstand opad */
+}
+
+.nav-link {
+  text-decoration: none; /* fjern understregning */
+  color: #e19474; /* samme farve som i billedet */
+  font-size: 17px;
+  font-family: "Gloock", serif;
+  border-bottom: 2px solid #e19474; /* lav en fin streg under */
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ee5b25; /* mørkere farve ved hover */
+}
+
+@media (max-width: 800px) {
+  .navigation-links {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 /************ nav bar *************/
@@ -53,7 +114,6 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #fffdef;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -61,7 +121,7 @@ header {
 header,
 header a {
   text-decoration: none;
-  color: #000000;
+  color: #e19474;
 }
 
 .logo {
@@ -79,6 +139,7 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: "Gloock", serif;
 }
 
 .menu li {
@@ -92,14 +153,14 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #000000;
+  color: #e19474;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a.active {
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid#e19474;
   padding-bottom: 5px;
 }
 
@@ -113,7 +174,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #000000;
+  background-color: #e19474;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -142,7 +203,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
+    background-color: #fffdef;
     position: absolute;
     top: 78px;
     left: 0;
@@ -164,14 +225,24 @@ nav {
 }
 
 /************* Forside ************/
+
+.portfolio-title {
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 0;
+}
 .navn h2 {
   margin-bottom: -100px;
   padding-top: 100px;
   text-align: center;
-  margin-left: -55px;
-  color: #e99477;
-  font-family: "Ms Madi", cursive;
-  text-align: center;
+  margin-left: 103px;
+  color: #ed7252;
+  font-size: 35px;
+  font-family: "Brush Script MT", cursive;
+  font-style: normal;
+  font-weight: 10;
+  top: 100px;
+  position: relative;
 }
 
 .portfolio h1 {
@@ -188,7 +259,7 @@ p {
   font-style: normal;
   padding-left: 60px;
   margin-right: 60px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .knap-link {
@@ -196,9 +267,10 @@ p {
   color: #ee5b25;
   border: 1px solid #ee5b25;
   margin-bottom: 50px;
-  margin-left: 61px;
-  padding: 12px 24px;
+  margin-left: 55px;
+  padding: 10px 24px;
   text-decoration: none;
+  font-family: "Gloock", serif;
 }
 
 .knap-link:hover {
@@ -209,14 +281,18 @@ p {
 @media (min-width: 800px) {
   .portfolio h1 {
     font-size: 250px;
+    margin-bottom: -1px;
+    margin-top: -50px;
   }
-  .navn {
+  .navn h2 {
     font-size: 60px;
-    margin-left: -100px;
+    margin-left: 550px;
+    bottom: -500px;
+    margin-bottom: -100px;
+    top: 140px;
   }
-
-  .forside-intro p {
-    margin-top: -200px;
+  .forside-navn {
+    margin-bottom: -1px;
   }
 }
 
@@ -234,6 +310,7 @@ p {
   margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
+  color: black;
 }
 
 @media (min-width: 800px) {
@@ -273,54 +350,50 @@ p {
   }
 
   .text-1 h2 {
-    margin-left: -330px;
+    margin-left: -270px;
     font-family: "Gloock", serif;
   }
 
-  .text-2 {
-    margin-left: 120px;
+  .grid-container_2 h2 {
+    margin-left: -90px;
   }
-  .text-3 {
-    margin-left: 100px;
+  .text-2 {
+    margin-left: 130px;
   }
 
+  .text-3 {
+    margin-right: 130px;
+  }
   .text-2 h2 {
     font-family: "Gloock", serif;
   }
   .text-3 h2 {
     font-family: "Gloock", serif;
   }
+  .text-2-1 h2 {
+    margin-left: -55px;
+  }
 
-  .grid-container_2 h2 {
-    margin-right: 20px;
+  .text-3-1 h2 {
+    margin-right: 145px;
   }
 }
 
 /************* Grundlæggende web **********/
-.img-web-1 {
-  display: flex;
-  justify-content: center; /* centrer horisontalt */
-  align-items: center; /* centrer vertikalt */
-  margin-bottom: 40px;
-}
-.img-web-2 {
-  display: flex;
-  justify-content: center; /* centrer horisontalt */
-  align-items: center; /* centrer vertikalt */
-  margin-bottom: 40px;
-}
-.img-web-3 {
-  display: flex;
-  justify-content: center; /* centrer horisontalt */
-  align-items: center; /* centrer vertikalt */
-  margin-bottom: 40px;
-}
 
-.img-web-4 {
+.img-web-1 img {
   display: flex;
   justify-content: center; /* centrer horisontalt */
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
+  max-width: 100%;
+}
+.img-web-2 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -334,31 +407,14 @@ p {
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
   }
-  .grid-web-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-  }
-  .grid-web-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-  }
+
   .img-web-1 {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-right: 250px;
-  }
-  .img-web-3 {
-    margin-right: 250px;
   }
 
   .img-web-2 {
-    padding-top: 100px;
-    margin-left: 250px;
-  }
-
-  .img-web-4 {
-    padding-top: 100px;
+    padding-top: 70px;
     margin-left: 250px;
   }
 
@@ -370,20 +426,246 @@ p {
     text-align: justify;
     padding-left: 60px;
   }
-  .text-web-3 h2 {
-    text-align: justify;
-    padding-left: 60px;
-  }
-  .text-web-4 h2 {
-    text-align: justify;
-    padding-left: 60px;
-  }
 
   .text-web-1 {
-    padding-left: 250px;
+    margin-left: 200px;
   }
 
-  .text-web-3 {
+  .text-web-2 {
+    margin-right: 200px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 800px) {
+  .next-link {
+    display: flex;
+    justify-content: end; /* placer links i hver sin side */
+    padding: 0 250px;
+    margin-top: 50px; /* valgfri afstand opad */
+  }
+}
+.web-link {
+  text-decoration: none; /* fjern understregning */
+  color: #e19474; /* samme farve som i billedet */
+  font-size: 17px;
+  font-family: "Gloock", serif;
+  border-bottom: 2px solid #e19474; /* lav en fin streg under */
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+  margin-left: 370px;
+}
+
+.web-link:hover {
+  color: #ee5b25; /* mørkere farve ved hover */
+}
+
+/************ Link til webiste **********/
+.knap {
+  display: inline-block;
+  color: #ee5b25;
+  border: 1px solid #ee5b25;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-family: "Gloock", serif;
+}
+
+.knap:hover {
+  background-color: #e94e1b;
+  color: white;
+}
+
+/********* Grundlæggende Ui/Ux ***********/
+.img-ui-ux-1 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.img-ui-ux-2 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  .grid-ui-ux-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .grid-ui-ux-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .img-ui-ux-1 {
+    padding-top: 70px;
+    padding-right: 250px;
+  }
+
+  .img-ui-ux-2 {
+    padding-top: 70px;
+    margin-left: 250px;
+  }
+
+  .text-ui-ux-1 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-ui-ux-2 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+
+  .text-ui-ux-1 {
+    margin-left: 200px;
+  }
+
+  .text-ui-ux-2 {
+    margin-right: 200px;
+  }
+}
+
+/********** Grundlæggende animation ***********/
+.img-animation-1 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.img-animation-2 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.grid-animation-3 img {
+  width: 100%;
+  max-width: 50px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.grid-animation-3 {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+@media (min-width: 800px) {
+  .grid-animation-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .grid-animation-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .img-animation-1 {
+    padding-top: 70px;
+    padding-right: 250px;
+  }
+
+  .img-animation-2 {
+    padding-top: 70px;
+    margin-left: 250px;
+  }
+
+  .text-animation-1 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-animation-2 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+
+  .text-animation-1 {
+    margin-left: 200px;
+  }
+
+  .text-animation-2 {
+    margin-right: 200px;
+  }
+
+  .grid-animation-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid-animation-3 {
+    margin-left: 400px;
+  }
+}
+
+/********** Grundlæggende indhold ***********/
+
+.img-indhold-1 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.img-indhold-2 img {
+  display: flex;
+  justify-content: center; /* centrer horisontalt */
+  align-items: center; /* centrer vertikalt */
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  .grid-indhold-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .grid-indhold-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .text-indhold-1 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+  .text-indhold-2 h2 {
+    text-align: justify;
+    padding-left: 60px;
+  }
+
+  .text-indhold-1 {
+    margin-left: 200px;
+  }
+
+  .text-indhold-2 {
+    margin-right: 200px;
+  }
+  .img-indhold-1 {
+    padding-top: 70px;
+    padding-right: 250px;
+  }
+
+  .img-indhold-2 {
+    padding-top: 70px;
     margin-left: 250px;
   }
 }
