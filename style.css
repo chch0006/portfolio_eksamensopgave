@@ -118,20 +118,22 @@ header {
   font-style: normal;
 }
 
+.logo img {
+  width: 40px;
+  height: 25px;
+}
+
 header,
 header a {
   text-decoration: none;
   color: #e19474;
 }
 
-.logo {
-  font-size: xx-large;
-}
-
 nav {
   display: flex;
   align-items: center;
   font-size: large;
+  margin-left: auto; /* dette flytter nav til højre */
 }
 
 .menu {
@@ -282,14 +284,14 @@ p {
   .portfolio h1 {
     font-size: 250px;
     margin-bottom: -1px;
-    margin-top: -50px;
+    margin-top: -10px;
   }
   .navn h2 {
-    font-size: 60px;
-    margin-left: 550px;
-    bottom: -500px;
+    font-size: 100px;
+    margin-left: 320px;
+    bottom: -800px;
     margin-bottom: -100px;
-    top: 140px;
+    top: 190px;
   }
   .forside-navn {
     margin-bottom: -1px;
@@ -326,6 +328,10 @@ p {
   align-items: center; /* centrer vertikalt */
 }
 
+.img-1 img {
+  width: 350px;
+  height: 430px;
+}
 .grid-container_2 {
   margin-top: 80px;
   padding: 10px;
@@ -562,6 +568,7 @@ p {
   display: flex;
   align-items: center;
   margin-left: 80px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 800px) {
@@ -609,6 +616,12 @@ p {
   }
   .grid-animation-3 {
     margin-left: 400px;
+  }
+  .grid-animation-3 img {
+    max-width: 100px;
+    height: auto;
+    margin-left: -100px;
+    margin-bottom: 100px;
   }
 }
 
