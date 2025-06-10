@@ -280,11 +280,6 @@ nav {
   font-family: "B612 Mono", monospace;
 }
 
-.knap-link:hover {
-  background-color: #cd5656;
-  color: black;
-}
-
 @media (min-width: 800px) {
   .portfolio h1 {
     font-size: 250px;
@@ -301,6 +296,10 @@ nav {
   }
   .forside-intro {
     padding-left: 110px;
+  }
+
+  .knap-link {
+    margin-left: 170px;
   }
 }
 
