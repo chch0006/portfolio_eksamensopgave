@@ -335,6 +335,14 @@ nav {
   color: black;
 }
 
+.grid-1-1:hover {
+  background-color: #e0d1bc;
+  color: #e94e1b;
+}
+
+a {
+  text-decoration: none;
+}
 @media (min-width: 800px) {
   .grid-1-1 {
     margin-left: 500px;
