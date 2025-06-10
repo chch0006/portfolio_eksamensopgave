@@ -32,7 +32,7 @@ body {
 h1 {
   font-family: "Gloock", serif;
   text-align: center;
-  color: #ed7252;
+  color: #cd5656;
   font-size: 30px;
 }
 
@@ -42,11 +42,12 @@ h2 {
 }
 
 p {
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   text-align: justify;
   font-size: 15px;
   line-height: 2;
-  font-family: "Lekton", monospace;
-  font-style: initial;
   padding-left: 60px;
   margin-right: 60px;
   max-width: 500px;
@@ -54,24 +55,19 @@ p {
 
 .knap {
   display: inline-block;
-  color: #ee5b25;
-  border: 1px solid #ee5b25;
+  color: black;
+  border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 50px;
   margin-left: 60px;
   padding: 10px 24px;
   text-decoration: none;
-  font-family: "Gloock", serif;
-}
-
-.knap:hover {
-  background-color: #e94e1b;
-  color: white;
+  font-family: "B612 Mono", monospace;
 }
 
 /********** Footer ***********/
 footer {
-  background-color: #e99477; /* den farve du bruger */
+  background-color: #da6c6c; /* den farve du bruger */
   width: 100%;
   padding: 40px 0; /* højde og lidt luft inde i footeren */
   margin: 0;
@@ -109,11 +105,11 @@ footer p {
 
 .nav-link {
   text-decoration: none; /* fjern understregning */
-  color: #e19474; /* samme farve som i billedet */
+  color: #ee5b25; /* samme farve som i billedet */
   font-size: 17px;
-  font-family: "Lekton", monospace;
-  border-bottom: 2px solid #e19474; /* lav en fin streg under */
+  border-bottom: 2px solid #ee5b25; /* lav en fin streg under */
   padding-bottom: 2px;
+  font-family: "Gloock", serif;
   transition: color 0.2s ease;
 }
 
@@ -161,7 +157,7 @@ header {
 header,
 header a {
   text-decoration: none;
-  color: black;
+  color: #da6c6c;
 }
 
 nav {
@@ -190,7 +186,7 @@ nav {
 .menu a {
   display: block;
   padding: 5px;
-  color: black;
+  color: #da6c6c;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
@@ -279,7 +275,7 @@ nav {
   margin-bottom: -100px;
   text-align: center;
   margin-left: 103px;
-  color: #ed7252;
+  color: #cd5656;
   font-size: 35px;
   font-family: "Brush Script MT", cursive;
   font-style: normal;
@@ -290,17 +286,17 @@ nav {
 
 .knap-link {
   display: inline-block;
-  color: black;
-  border: 1px solid black;
+  color: #cd5656;
+  border: 1px solid #cd5656;
   margin-bottom: 50px;
   margin-left: 60px;
   padding: 10px 24px;
   text-decoration: none;
-  font-family: "Lekton", monospace;
+  font-family: "B612 Mono", monospace;
 }
 
 .knap-link:hover {
-  background-color: #ed7252;
+  background-color: #cd5656;
   color: black;
 }
 
@@ -506,10 +502,10 @@ a {
 
 .web-link {
   text-decoration: none; /* fjern understregning */
-  color: #e19474; /* samme farve som i billedet */
+  color: #ee5b25; /* samme farve som i billedet */
   font-size: 17px;
   font-family: "Gloock", serif;
-  border-bottom: 2px solid #e19474; /* lav en fin streg under */
+  border-bottom: 2px solid #ee5b25; /* lav en fin streg under */
   padding-bottom: 2px;
   transition: color 0.2s ease;
   margin-left: 333px;
