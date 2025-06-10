@@ -324,7 +324,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   padding-left: 50px;
   margin-right: 30px;
-  margin-left: 50px;
+  margin-left: 40px;
   max-width: 400px;
   background-color: #e0d1bc;
   border-radius: 20px;
@@ -412,7 +412,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 .img-web-2 img {
   display: flex;
@@ -420,7 +420,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 60px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .text-web-1 h1 {
@@ -491,7 +491,7 @@ a {
   border-bottom: 2px solid #e19474; /* lav en fin streg under */
   padding-bottom: 2px;
   transition: color 0.2s ease;
-  margin-left: 370px;
+  margin-left: 333px;
 }
 
 .web-link:hover {
@@ -505,7 +505,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 .img-ux-ui-2 img {
   display: flex;
@@ -513,7 +513,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 @media (min-width: 800px) {
@@ -564,7 +564,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 .img-animation-2 img {
   display: flex;
@@ -572,7 +572,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .grid-animation-3 img {
@@ -588,7 +588,7 @@ a {
   align-items: center;
   margin-left: 80px;
   margin-bottom: 40px;
-  margin-left: 130px;
+  margin-left: 115px;
 }
 
 @media (min-width: 800px) {
@@ -652,7 +652,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .img-indhold-2 img {
@@ -661,7 +661,7 @@ a {
   align-items: center; /* centrer vertikalt */
   margin-bottom: 40px;
   max-width: 100%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 @media (min-width: 800px) {
