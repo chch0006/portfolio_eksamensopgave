@@ -17,18 +17,6 @@ body {
   font-style: normal;
 }
 
-.ms-madi-regular {
-  font-family: "Ms Madi", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.league-script-regular {
-  font-family: "League Script", cursive;
-  font-weight: 200;
-  font-style: normal;
-}
-
 h1 {
   font-family: "Gloock", serif;
   text-align: center;
@@ -283,8 +271,8 @@ nav {
 
 .knap-link {
   display: inline-block;
-  color: #cd5656;
-  border: 1px solid #cd5656;
+  color: black;
+  border: 1px solid black;
   margin-bottom: 50px;
   margin-left: 60px;
   padding: 10px 24px;
@@ -301,7 +289,7 @@ nav {
   .portfolio h1 {
     font-size: 250px;
     margin-bottom: -1px;
-    margin-top: -10px;
+    margin-top: -120px;
     padding-bottom: 20px;
   }
   .navn h2 {
@@ -309,7 +297,10 @@ nav {
     margin-left: 390px;
     bottom: -800px;
     margin-bottom: -100px;
-    top: 220px;
+    top: 200px;
+  }
+  .forside-intro {
+    padding-left: 110px;
   }
 }
 
